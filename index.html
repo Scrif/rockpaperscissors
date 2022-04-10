@@ -8,12 +8,20 @@
 </head>
 <body>
     <script>
+        
        function computerPlay() {
         var choices = ["Rock", "Paper", "Scissors"];
         console.log(choices[Math.floor(Math.random()*choices.length)]);
        }
        
-       computerPlay();
+       function playRound(playerSelection, computerSelection) {
+            
+       }
+       
+       const playerSelection = "rock";
+       const computerSelection = computerPlay();
+       console.log(playRound(playerSelection, computerSelection));
+
     </script>
 </body>
 </html>
