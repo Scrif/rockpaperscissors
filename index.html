@@ -31,9 +31,14 @@
             else return `That was a draw. Try Again!`;
         }
        
-       const playerSelection = "rock";
-       const computerSelection = computerPlay();
-       console.log(playRound(playerSelection, computerSelection));
+        function game() {
+            for (let i = 0; i < 5; i++) {
+                let playerSelection = prompt('Enter your choice: Rock, Paper, or Scissors')
+                playerSelection = playerSelection.toLowerCase();
+                const computerSelection = computerPlay();
+                console.log(playRound(playerSelection, computerSelection))
+            }
+        }
 
     </script>
 </body>
