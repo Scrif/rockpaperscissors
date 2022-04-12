@@ -14,6 +14,9 @@
         return choices[Math.floor(Math.random()*choices.length)];
        }
        
+       let computerScore = 0;
+       let playerScore = 0;
+       
        function playRound(playerSelection, computerSelection) {
         if (playerSelection == 'rock' && computerSelection == 'Scissors') {
                 playerScore++;
