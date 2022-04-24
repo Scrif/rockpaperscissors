@@ -37,8 +37,16 @@
         return choices[Math.floor(Math.random()*choices.length)];
        }
        
+       let computerSelection;
+       let playerSelection;
        let computerScore = 0;
        let playerScore = 0;
+       
+       let buttons = document.querySelectorAll(".button");
+       const body = document.querySelector("body");
+       const main = document.querySelector("main");
+       const container = document.querySelector("#results-container");
+       
 
        function playRound(playerSelection, computerSelection) {
         if (playerSelection == 'rock' && computerSelection == 'Scissors') {
