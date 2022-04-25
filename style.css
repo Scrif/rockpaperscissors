@@ -11,3 +11,7 @@
     justify-content: center;
     align-items: center;
 }
+
+.button img {
+    width: 150px;
+}
