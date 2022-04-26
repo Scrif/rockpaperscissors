@@ -36,12 +36,14 @@ function playRound(playerSelection, computerSelection) {
     updateScoreMessage(roundWinner, playerSelection, computerSelection)
 }
 
-let buttons = document.querySelectorAll(".button");
-const body = document.querySelector("body");
-const main = document.querySelector("main");
-const container = document.querySelector("#results-container");
-const retryButton = document.querySelector("#retry-button");
-const endAlert = document.querySelector("end-alert");
+const scoreBoard = document.getElementById('scoreBoard')
+const scoreMessage = document.getElementById('scoreMessage')
+const playerScoreInfo = document.getElementById('playerScore')
+const computerScoreInfo = document.getElementById('computerScore')
+const rockButton = document.getElementById('rock-button')
+const paperButton = document.getElementById('paper-button')
+const scissorsButton = document.getElementById('scissors-button')
+const retryButton = document.getElementById('retry-button')
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
