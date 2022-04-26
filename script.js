@@ -10,7 +10,9 @@ function computerPlay() {
     var choices = ["Rock", "Paper", "Scissors"];
     return choices[Math.floor(Math.random()*choices.length)];
     }
-       
+
+// Contains the logic to check the winner of a round
+
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         roundWinner = "tie"
@@ -33,7 +35,7 @@ function playRound(playerSelection, computerSelection) {
     }
     updateScoreMessage(roundWinner, playerSelection, computerSelection)
 }
-       
+
 let buttons = document.querySelectorAll(".button");
 const body = document.querySelector("body");
 const main = document.querySelector("main");
@@ -54,13 +56,13 @@ buttons.forEach((button) => {
     });
 });
 
-       function declareWinner() {
-           if (playerScore > computerScore) {
-               endDesc.textContent = (`Congratulations! You're the winner!`);
-           }  else {
-               endDesc.textContent = (`You lost...`);
-           };
-       };
+function declareWinner() {
+    if (playerScore > computerScore) {
+        endDesc.textContent = (`Congratulations! You're the winner!`);
+    }  else {
+        endDesc.textContent = (`You lost...`);
+    };
+};
 
 
 
