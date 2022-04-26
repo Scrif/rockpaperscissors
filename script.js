@@ -45,18 +45,18 @@ const paperButton = document.getElementById('paper-button')
 const scissorsButton = document.getElementById('scissors-button')
 const retryButton = document.getElementById('retry-button')
 
-buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        const img = button.querySelector("img");
-        playerSelection = img.alt.toLowerCase();
+// buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//         const img = button.querySelector("img");
+//         playerSelection = img.alt.toLowerCase();
 
-        playRound(playerSelection, computerSelection);
+//         playRound(playerSelection, computerSelection);
 
-        if (playerScore === 5 || computerScore === 5) {
-            declareWinner();
-        }
-    });
-});
+//         if (playerScore === 5 || computerScore === 5) {
+//             declareWinner();
+//         }
+//     });
+// });
 
 function declareWinner() {
     if (playerScore > computerScore) {
