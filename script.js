@@ -34,12 +34,12 @@ function playRound(playerSelection, computerSelection) {
     updateScoreMessage(roundWinner, playerSelection, computerSelection)
 }
        
-       let buttons = document.querySelectorAll(".button");
-       const body = document.querySelector("body");
-       const main = document.querySelector("main");
-       const container = document.querySelector("#results-container");
-       const retryButton = document.querySelector("#retry-button");
-       const endAlert = document.querySelector("end-alert");
+let buttons = document.querySelectorAll(".button");
+const body = document.querySelector("body");
+const main = document.querySelector("main");
+const container = document.querySelector("#results-container");
+const retryButton = document.querySelector("#retry-button");
+const endAlert = document.querySelector("end-alert");
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
