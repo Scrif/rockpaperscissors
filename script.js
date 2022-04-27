@@ -36,6 +36,15 @@ function playRound(playerSelection, computerSelection) {
     updateScoreMessage(roundWinner, playerSelection, computerSelection)
 }
 
+function updateScore() {
+    if (roundWinner === 'tie') {
+        scoreInfo.textContent = "It's a tie!"
+    }   else if (roundWinner === 'player') {
+        scoreInfo.textContent = "You won the round!"
+    }   else if (roundWinner === 'computer') {
+        scoreInfo.textContent = "You lost the round..."
+    }
+}
 const scoreBoard = document.getElementById('scoreBoard')
 const scoreMessage = document.getElementById('scoreMessage')
 const playerScoreInfo = document.getElementById('playerScore')
