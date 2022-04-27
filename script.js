@@ -33,7 +33,7 @@ function playRound(playerSelection, computerSelection) {
         computerScore++
         roundWinner = 'computer'
     }
-    updateScoreMessage(roundWinner, playerSelection, computerSelection)
+    updateScoreText(roundWinner, playerSelection, computerSelection)
 }
 
 function updateScore() {
@@ -48,6 +48,19 @@ function updateScore() {
 
 playerScoreText.textContent = "You: ${playerScore}"
 computerScoreText.textContent = "Computer: ${computerScore}"
+
+function updateScoreText(winner, playerSelection, computerSelection) {
+    if (winner === 'player') {
+        scoreMessage.textContent = `${capitalizeFirstLetter(playerSelection)}
+        beats ${computerSelection.toLowerCase()}`
+        return
+    }
+    if (winner === 'computer') {
+        scoreMessage.textContent = `${capitalizeFirstLetter(playerSelection)}
+        is beaten by ${computerSelection.toLowerCase()}`
+        return
+    }
+}
 
 const scoreBoard = document.getElementById('scoreBoard')
 const scoreMessage = document.getElementById('scoreMessage')
