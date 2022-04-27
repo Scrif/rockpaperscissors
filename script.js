@@ -62,6 +62,10 @@ function updateScoreText(winner, playerSelection, computerSelection) {
     }
 }
 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
+}
+
 const scoreBoard = document.getElementById('scoreBoard')
 const scoreMessage = document.getElementById('scoreMessage')
 const playerScoreInfo = document.getElementById('playerScore')
