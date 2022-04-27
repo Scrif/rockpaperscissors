@@ -40,10 +40,15 @@ const scoreBoard = document.getElementById('scoreBoard')
 const scoreMessage = document.getElementById('scoreMessage')
 const playerScoreInfo = document.getElementById('playerScore')
 const computerScoreInfo = document.getElementById('computerScore')
-const rockButton = document.getElementById('rock-button')
-const paperButton = document.getElementById('paper-button')
-const scissorsButton = document.getElementById('scissors-button')
+const rockButton = document.getElementById('rock')
+const paperButton = document.getElementById('paper')
+const scissorsButton = document.getElementById('scissors')
 const retryButton = document.getElementById('retry-button')
+
+rockButton.addEventListener('click'), () => handleClick('rock')
+paperButton.addEventListener('click'), () => handleClick('paper')
+scissorsButton.addEventListener('click'), () => handleClick('scissors')
+retryButton.addEventListener('click', restartGame)
 
 // buttons.forEach((button) => {
 //     button.addEventListener("click", () => {
