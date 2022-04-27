@@ -66,10 +66,25 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
 }
 
+function endGameCheck () {
+    return playerScore === 5 || computerScore === 5
+}
+
 function displayEndgameMessage() {
     return playerScore > computerScore
     ? (endgameMsg.textContent = "Congratulations! You won the game!")
     : (endgameMsg.textContent = "Oh no.... You lost the game.")
+}
+
+function newGame() {
+    playerScore = 0
+    computerScore = 0
+    scoreInfo.textContent = "Choose your sign!"
+    scoreMessage.textContent = "First to 5, wins the game!"
+    playerScoreText.textContent = "Player: 0"
+    computerScoreText.textContent = "Computer: 0"
+    playerPick.textContent = "?"
+    computerPick.textContent = "?"
 }
 
 const scoreBoard = document.getElementById('scoreBoard')

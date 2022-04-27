@@ -1,17 +1,28 @@
-
-#button-container {
-    display: flex;
-    justify-content: center;
+*,
+*::before.
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.button {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    line-height: 1.6;
+    margin-bottom: 100px;
 }
 
-.button img {
-    width: 150px;
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.game-container {
+    margin-top: 40px;
+    text-align: center;
 }
