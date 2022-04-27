@@ -95,7 +95,7 @@
     font-weight: bold;
   }
   
-  .buttons {
+  .button-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,7 +120,7 @@
     background-color: var(--secondary-dark-active);
   }
   
-  .sign {
+  .choice {
     font-size: 80px;
     margin-bottom: 10px;
   }
