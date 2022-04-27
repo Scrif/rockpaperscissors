@@ -9,7 +9,12 @@ let roundWinner = '';
 function computerPlay() {
     var choices = ["Rock", "Paper", "Scissors"];
     return choices[Math.floor(Math.random()*choices.length)];
-    }
+}
+
+const computerSelection = computerPlay()
+playRound(playerSelection, computerSelection)
+updateChoices(playerSelection, computerSelection)
+updateScore()
 
 // Contains the logic to check the winner of a round
 
@@ -95,6 +100,7 @@ const rockButton = document.getElementById('rock')
 const paperButton = document.getElementById('paper')
 const scissorsButton = document.getElementById('scissors')
 const retryButton = document.getElementById('retry-button')
+const endgameMsg = document.getElementById('endgameMsg')
 
 rockButton.addEventListener('click'), () => handleClick('rock')
 paperButton.addEventListener('click'), () => handleClick('paper')
