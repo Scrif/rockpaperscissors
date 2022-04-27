@@ -108,23 +108,3 @@ function declareWinner() {
         endDesc.textContent = (`You lost...`);
     };
 };
-
-
-
-       
-//        function game() {
-//            for (let i = 0; i < 5; i++) {
-//                let playerSelection = prompt('Enter your choice: Rock, Paper, or Scissors')
-//                playerSelection = playerSelection.toLowerCase();
-//                const computerSelection = computerPlay();
-//                console.log(playRound(playerSelection, computerSelection));
-//            }
-//            if (playerScore > computerScore) {
-//                console.log(`You're the winner! Final Score: ${playerScore} to ${computerScore}`);
-//            } else if (computerScore > playerScore) {
-//                console.log(`You're the loser. Final Score: ${playerScore} to ${computerScore}`);
-//            } else
-//                console.log(`You tied. Final Score: ${playerScore} to ${computerScore}`);
-//        }
-//
-//        game();
