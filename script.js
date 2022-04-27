@@ -66,6 +66,12 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
 }
 
+function displayEndgameMessage() {
+    return playerScore > computerScore
+    ? (endgameMsg.textContent = "Congratulations! You won the game!")
+    : (endgameMsg.textContent = "Oh no.... You lost the game.")
+}
+
 const scoreBoard = document.getElementById('scoreBoard')
 const scoreMessage = document.getElementById('scoreMessage')
 const playerScoreInfo = document.getElementById('playerScore')
