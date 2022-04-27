@@ -45,6 +45,10 @@ function updateScore() {
         scoreInfo.textContent = "You lost the round..."
     }
 }
+
+playerScoreText.textContent = "You: ${playerScore}"
+computerScoreText.textContent = "Computer: ${computerScore}"
+
 const scoreBoard = document.getElementById('scoreBoard')
 const scoreMessage = document.getElementById('scoreMessage')
 const playerScoreInfo = document.getElementById('playerScore')
